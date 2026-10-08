@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "校園偵探社：消失的冠軍獎盃",
+      "hasCanvas": false,
+      "bodyTextLen": 76,
+      "bodyTextHash": "44147e4a6660d9caf2d095f4b78c74c24611193b1f4fef1c80ce38a66f545a33",
+      "bodyTextPrefix": "青葉中學・校園偵探社 消失的冠軍獎盃 頒獎典禮前一夜，金桂冠軍獎盃從走廊玻璃櫃消失。你要查現場、問三個人，再指出是誰藏起它、為什",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "校園偵探社：消失的冠軍獎盃",
+      "hasCanvas": false,
+      "bodyTextLen": 76,
+      "bodyTextHash": "44147e4a6660d9caf2d095f4b78c74c24611193b1f4fef1c80ce38a66f545a33",
+      "bodyTextPrefix": "青葉中學・校園偵探社 消失的冠軍獎盃 頒獎典禮前一夜，金桂冠軍獎盃從走廊玻璃櫃消失。你要查現場、問三個人，再指出是誰藏起它、為什",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

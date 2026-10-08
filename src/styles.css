@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #101820;
+  --color-panel: #1a2732;
+  --color-panel-2: #243442;
+  --color-line: #314454;
+  --color-mist: #b7ab98;
+  --color-paper: #f3ead8;
+  --color-paper-dim: #e4d7c0;
+  --color-ink-soft: #5e564b;
+  --color-brass: #e0a33a;
+  --color-brass-deep: #a87420;
+  --color-seal: #c4483a;
+  --font-sans: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-serif: "Noto Serif TC", "PMingLiU", "Songti TC", serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  button:focus-visible,
+  summary:focus-visible,
+  [role="button"]:focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 2px;
+  }
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  ::selection {
+    background: var(--color-brass);
+    color: var(--color-ink);
+  }
+}
+
+.dossier {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  background-image: linear-gradient(
+    180deg,
+    color-mix(in oklab, white 42%, transparent),
+    transparent 34%
+  );
+}
+
+.hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--color-ink) 18%, transparent) 0%,
+      var(--color-ink) 84%
+    ),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-ink) 72%, transparent), transparent 58%);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 220ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
