@@ -118,7 +118,7 @@ export function loadSave(): SaveData | null {
       found: data.found as ClueId[],
       visited: data.visited as LocationId[],
       talked: data.talked as SuspectId[],
-      asked: data.asked.filter((item) => /^(boyu|yixuan|ziqian):[a-z]+$/.test(item)),
+      asked: data.asked.filter((item) => /^(boyu|yixuan|ziqian):[a-z0-9-]+$/.test(item)),
       wrong: data.wrong,
       screen: screen === "ending" && !solved ? "hub" : screen,
       location: data.location as LocationId,
